@@ -1,9 +1,29 @@
 /* style guide 
-Colors
--Principal colors- #F5E7DC, #aa8abd, #3B0273
--Dropshadow- #F5E7DC75
--Active state- #FAA16F
--hyperlink- blue
+shape ref
+https://www.pinterest.com/tiagrafico/1950s-graphic-design/
+
+Whole Color group
+------------------Primary/ight stone-------------------
+#fef8be, (off-white)
+#cbbe8a, (tan)
+#f3cb4f, (yellow)
+#c33521, (orange)
+------------------secondary/Dark stone-------------------
+#a63316, (rust)
+#762923, (brick)
+#4c211b, (blood)
+-----------------Accent---------------------
+#64a4c0, (blue)
+#1c374a, (blue/Green)
+#3c693e, (Green)
+
+Primary Color swatch
+--------------------------------------
+#fef8be, (off-white)
+#cbbe8a, (tan)
+#64a4c0, (blue)
+#a63316, (rust)
+
 -Font family- 'Source Sans Pro' 
 */
 
@@ -24,19 +44,111 @@ dl {
   color: #3b0273;
 }
 
+/*linear-Smoke*/
+.airflow {
+  position: absolute;
+  width: 900px;
+  height: 150px;
+  margin: 0px auto;
+  overflow: hidden;
+
+}
+
+.theCard {
+  position: relative;
+  width: 1800px;
+  height: 100%;
+  /* background-image: url(images/ghost2.png); */
+  background-repeat: repeat-x;
+  -webkit-animation: header_Roll linear 24s infinite;
+  
+}
+
+
+.card-one {
+  position: absolute;
+  width: 1800px;
+  height: 151px;
+  backface-visibility: visible;
+  background-image: url(http://dmg2120.americanzephyr.net/images/breeze2.png);
+  background-repeat: repeat-x;
+  transform: rotateX(180deg);
+}
+
+.card-two {
+  position: absolute;
+  width: 1800px;
+  height: 151px;
+  left: 30px;
+  backface-visibility: visible;
+  background-image: url(http://dmg2120.americanzephyr.net/images/breeze2.png);
+  background-size: 930px 200px;
+  background-repeat: repeat-x;
+  transition: ease-in-out;
+  transform: rotateX(110deg);
+  
+}
+
+.card-three {
+  position: absolute;
+  width: 1800px;
+  height: 151px;
+  left: 60px;
+  backface-visibility: visible;
+  background-image: url(http://dmg2120.americanzephyr.net/images/breeze2.png);
+  background-size: 960px 100px;
+  background-repeat: repeat-x;
+  transform: rotateX(110deg);
+}
+
+/*Translate*/
+@-webkit-keyframes header_Roll {
+  from { right: 0px; }
+  to { right: 900px; }
+}
+/*rotate*/
+  .card-one {
+      -webkit-animation: rotation 16s infinite linear;
+  }
+  @-webkit-keyframes rotation {
+      from {-webkit-transform: rotateX(179deg); 
+      }
+      to {-webkit-transform: rotateX(180deg);
+      }
+  } 
+  /**/
+      .card-two {
+          -webkit-animation: rotation 13.6s infinite linear;
+      }
+      @-webkit-keyframes rotation {
+          from {-webkit-transform: rotateX(0deg);
+          }
+          to {-webkit-transform: rotateX(359deg);
+          }
+      } 
+  /**/
+          .card-three {
+              -webkit-animation: rotation 15.4s infinite linear;
+          }
+          @-webkit-keyframes rotation {
+              from {-webkit-transform: rotateX(0deg);
+              }
+              to {-webkit-transform: rotateX(359deg);
+              }
+          } 
+
 body {
-  background-image: linear-gradient(0deg, #64428c 0%, #f5e7dc 85%);
+  background-image: linear-gradient(0deg, #fef8be 60%, #64a4c0 85%);
   border-top: 3px solid #64428c;
 }
 
 #wrapper {
   max-width: 900px;
   margin: 0 auto;
-  background-image: url(http://dmg2120.americanzephyr.net/images/windTile4.png);
   background-repeat: repeat;
   border-radius: 0rem 0rem 2rem 2rem;
   border: solid 3px #3b0273;
-  box-shadow: 4px 4px 3px #3b027390;
+  box-shadow: 4px 4px 3px #3b027a63316390;
 }
 
 .hLink {
@@ -47,9 +159,35 @@ body {
 header {
   display: flex;
   justify-content: center;
-  background-color: #aa8abd;
+  background-color: #a63316;
   background-image: url(http://dmg2120.americanzephyr.net/images/airFlow.png);
   background-repeat: no-repeat;
+}
+.levantLogo {
+  margin: 14px;
+  font-size: 120%;
+  text-align: center;
+  color: #3b0273;
+  filter: drop-shadow(0.2mm 0.6mm .2mm #4c211b);
+}
+.levantLogo img {
+  width: 100%;
+  filter: drop-shadow(0.5mm 1mm 0.6mm #4c211b);
+}
+
+.logoCap {
+  font-size: 150%;
+  text-align: left;
+  font-family: "Verdana";
+ padding: 0 0 0 42px;
+position: relative;
+bottom: 30px;
+ color: #64a4c0;
+ text-shadow:
+ -1px -1px 0px #4c211b,  
+  1px -1px 0px #4c211b,
+  -1px 1px 0px #4c211b,
+   1px 1px 0px #4c211b;
 }
 
 /* Phone Nav rules */
@@ -113,19 +251,19 @@ header {
  
   .headCase {
     background-color: #aa8abd;
-    border-radius: 0rem 0rem 2rem 2rem;
+    
   }
  
   #navbar {
     height: 100%;
     display: flex;
     justify-content: center;
-    background-color: #64428c;
+    background-color: #cbbe8a;
     border: 1px solid #3b0273;
     font-family: "Verdana";
-    border-radius: 2rem 2rem 2rem 2rem;
-    filter: drop-shadow(0 4px 2px #3b027380);
-    box-shadow: -2px -4px 3px #3b027390 inset;
+ 
+    filter: drop-shadow(0 4px 2px #c3352180);
+    box-shadow: -2px -4px 3px #c33521 inset;
   }
 
   .mynav {
@@ -137,19 +275,19 @@ header {
   }
 
   .mynav a {
-    color: #f5e7dc;
+    color: #762923;
     font-weight: bold;
     padding: 15px 1.3rem;
     text-decoration: none;
   }
   .active a {
-    background-color: #faa16f;
-    color: #3b0273;
+    background-color: #64a4c0;
+    color: #f5e7dc;
     font-weight: 600;
     transition: 0.4s;
-    border: solid 2px #3b0273;
-    box-shadow: 2px 3px 3px #3b027395 inset;
-    text-shadow: 2px 1px 3px #f5e7dc;
+    border: solid 2px #4c211b;
+    box-shadow: 2px 3px 3px #1c374a inset;
+    text-shadow: 2px 1px 3px #4c211b;
   }
 
   #navbar a:hover {
@@ -175,7 +313,7 @@ blockquote {
 h1 {
   padding: 0;
   margin: 0;
-  color: #3b0273;
+  color: #f3cb4f;
   text-align: center;
   margin: 2rem;
   font-size: 3rem;
@@ -186,25 +324,7 @@ h1 {
 }
 
 /* Images style*/
-.levantLogo {
-  margin: 14px;
-  font-size: 120%;
-  filter: drop-shadow(0.5mm 1mm 0.6mm #3b0273);
-  text-align: center;
-  color: #3b0273;
-  filter: drop-shadow(0.2mm 0.6mm 0.2mm #f5e7dc75);
-}
-.levantLogo img {
-  width: 100%;
-  filter: drop-shadow(0.5mm 1mm 0.6mm #3b0273);
-}
 
-.logoCap {
-  font-size: 60%;
-  padding-right: 4%;
-  font-family: "Verdana";
- padding-top: 2px;
-}
 
 figure.bedMold {
   text-align: center;
