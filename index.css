@@ -301,6 +301,10 @@ bottom: 30px;
 }
 /*End Desktop Nav*/
 
+main {
+  background-image: url(images/Pano.jpg);
+  background-repeat: no-repeat;
+}
 blockquote {
   display: flex;
   justify-content: center;
