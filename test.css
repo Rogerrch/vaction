@@ -1,0 +1,59 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(0deg, #fef8be 60%, #64a4c0 85%);
+  }
+
+
+header {
+    margin: 0;
+    padding: 0;
+    max-width: 900px;
+    background-color: #a63316;
+    background-image: url(http://dmg2120.americanzephyr.net/images/airFlow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 7;
+    position: fixed;
+}
+
+#navbar {
+    width: 100% auto;
+    display: flex;
+    justify-content: center;
+    background-color: #cbbe8a;
+    border: 1px solid #762923;
+    font-family: "Verdana";
+    position: relative;
+    z-index: 10;
+}
+
+.mynav {
+    display: flex;
+    justify-content: center; 
+    flex-direction: row;
+}
+
+
+main {
+  
+    background-image: url(images/Pano.jpg);
+    background-repeat: no-repeat;
+  }
+
+  main.content {
+    max-width: auto;  
+  }
+
+  p {
+    width: 900px;
+  }
+
+  footer {
+
+  }
