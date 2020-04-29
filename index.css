@@ -39,9 +39,29 @@ h6,
 dl {
   max-width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0 2rem 0 2rem;
   font-family: "Source Sans Pro";
-  color: #3b0273;
+  color: #4c211b;
+  text-shadow:
+  -1px 1px 2px #FFFFFF90;   
+}
+
+h1 {
+  padding: 20px 0 30px 0;
+  margin: 0;
+  color: #f3cb4f;
+  text-align: center;
+  margin: 2rem;
+  font-size: 3rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 2px 2px 3px #76292390;
+}
+
+p {
+  margin: 2rem;
+  font-family: "Verdana";
 }
 
 /*linear-Smoke*/
@@ -139,7 +159,6 @@ dl {
 
 body {
   background-image: linear-gradient(0deg, #fef8be 60%, #64a4c0 85%);
-  border-top: 3px solid #64428c;
 }
 
 #wrapper {
@@ -147,8 +166,8 @@ body {
   margin: 0 auto;
   background-repeat: repeat;
   border-radius: 0rem 0rem 2rem 2rem;
-  border: solid 3px #3b0273;
-  box-shadow: 4px 4px 3px #3b027a63316390;
+  border: solid 3px #762923;
+  box-shadow: 4px 4px 3px #4c211b90;
 }
 
 .hLink {
@@ -160,17 +179,15 @@ header {
   display: flex;
   justify-content: center;
   background-color: #a63316;
-  background-image: url(http://dmg2120.americanzephyr.net/images/airFlow.png);
   background-repeat: no-repeat;
 }
-.levantLogo {
+.AZ-logo {
   margin: 14px;
   font-size: 120%;
   text-align: center;
-  color: #3b0273;
   filter: drop-shadow(0.2mm 0.6mm .2mm #4c211b);
 }
-.levantLogo img {
+.AZ-logo img {
   width: 100%;
   filter: drop-shadow(0.5mm 1mm 0.6mm #4c211b);
 }
@@ -194,8 +211,6 @@ bottom: 30px;
 @media screen and (max-width: 600px) {
 
   .headCase {
-    background-color: #aa8abd;
-    border-radius: 0rem 0rem 2rem 2rem;
     filter: drop-shadow(0 4px 2px #3b027380); 
   }
 
@@ -216,7 +231,7 @@ bottom: 30px;
     border: solid 2px #aa8abd;
     display: block;
     padding: 0.5rem 5%;
-    background-color: #64428c;
+    background-color: #f3cb4f;
     margin: 0 .5rem .5rem .5rem;
     border-radius: 0.8rem;
     color: #f5e7dc;
@@ -227,10 +242,10 @@ bottom: 30px;
   }
   .active a {
     background-color: #faa16f;
-    color: #3b0273;
+    color: #1c374a;
     font-weight: 600;
     transition: 0.1s;
-    box-shadow: 2px 3px 3px #3b0273 inset;
+    box-shadow: 2px 3px 3px #1c374a inset;
     text-shadow: 2px 1px 3px #f5e7dc;
   }
 
@@ -261,9 +276,8 @@ bottom: 30px;
     background-color: #cbbe8a;
     border: 1px solid #762923;
     font-family: "Verdana";
- 
     filter: drop-shadow(0 4px 2px #c3352180);
-    box-shadow: -2px -4px 3px #c33521 inset;
+    box-shadow: -2px -4px 3px #76292395 inset;
   }
 
   .mynav {
@@ -291,63 +305,46 @@ bottom: 30px;
   }
 
   #navbar a:hover {
-    background-color: #aa8abd;
+    background-color: #f3cb4f;
+    color: white;
     transition: 0.2s;
     font-weight: bold;
-    border: solid 1px #3b0273;
-    box-shadow: 2px -3px 3px #3b027395 inset;
-    text-shadow: 2px 1px 3px #3b0273;
+    border: solid 1px #4c211b;
+    text-shadow: 2px 1px 3px #4c211b;
+    box-shadow: 
+    -2px -3px 6px #f5e7dc95 inset,
+    -2px 3px 6px #f5e7dc95 inset,
+    2px -3px 6px #f5e7dc95 inset,
+    2px 3px 6px #f5e7dc95 inset;
+    border-radius: 5px;
+    
   }
 }
 /*End Desktop Nav*/
 
 main {
-  background-image: url(images/Pano.jpg);
+margin: 0;
+  background-image: url(images/Pano2.jpg);
   background-repeat: no-repeat;
 }
-blockquote {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 18pt;
-  font-weight: 100;
-  color: #3b0273;
-}
 
-h1 {
-  padding: 0;
-  margin: 0;
-  color: #f3cb4f;
-  text-align: center;
-  margin: 2rem;
-  font-size: 3rem;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: 700;
-  font-style: italic;
-  text-shadow: 2px 2px 3px #3b027390;
+.headSpace {
+  height: 220px
 }
 
 /* Images style*/
 
-
-figure.bedMold {
-  text-align: center;
-  margin: 0;
-  padding: 0;
+.diagrams {
   float: right;
-  max-width: 30%;
-  padding: 0% 3%;
+  padding: 0 0 20px 20px;
 }
 
-figure.bedMold img {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  border-radius: 30px 30px 0px 0px;
-  border: solid 3px #64428c;
+.atlas {
+  
+  padding: 0 2rem 0 0;
 }
 
-.bedMoldText {
+figcaption.GCmapText {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -358,68 +355,54 @@ figure.bedMold img {
   height: 40px;
   padding-top: 15px;
   padding-bottom: 5px;
-  border-radius: 0px 0px 30px 30px;
-  background-image: linear-gradient(0deg, #faa16f80 0%, #f5e7dc 85%);
-  border: solid 3px #64428c;
-  filter: drop-shadow(0.5mm 1mm 0.6mm #3b027350);
+  color: #4c211b;
+  text-shadow:
+  -1px 1px 2px #4c211b90;  
 }
-
-.diagrams {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: 20px 0px 20px 0px;
-}
-
-.example {
+figure.GCmap {
+  text-align: center;
   margin: 0;
   max-width: 400px;
   min-width: 200px;
-  transition: ease-in 0.4s;
 }
 
-.example img {
-  display: flex;
-  flex-flow: column;
-  margin: 16px 0 0 0;
+figure.GCmap img {
   width: 100%;
-  border-radius: 30px 30px 0px 0px;
-  filter: drop-shadow(0.5mm 1mm 0.6mm #3b027350);
 }
 
-.materialChar {
-  margin: 0;
-  padding: 0 0 0 0;
-  width: 100%;
-  font-size: 130%;
-  font-variant: small-caps;
-  font-weight: bold;
+.greenTable {
+}
+
+figure.MesaV {
   text-align: center;
-  bottom: 2rem;
-  height: 20px;
-  padding-bottom: 20px;
-  border-radius: 0px 0px 30px 30px;
-  background-color: #a182ab;
-  filter: drop-shadow(0.5mm 1mm 0.6mm #3b027350);
-  font-variant: small-caps;
+  margin: 0;
+  max-width: 400px;
+  min-width: 200px;
 }
 
-.physChar {
-  margin: 0;
-  padding: 0 0 0 0;
-  width: 100%;
-  font-size: 130%;
-  font-variant: small-caps;
-  font-weight: bold;
-  text-align: center;
-  bottom: 2rem;
-  height: 20px;
-  padding-bottom: 20px;
-  border-radius: 0px 0px 30px 30px;
-  background-color: #a182ab;
-  filter: drop-shadow(0.5mm 1mm 0.6mm #3b027350);
-  font-variant: small-caps;
+figure.MesaV img {
+  box-shadow: 
+  -2px -2px 0px #76292390,
+  2px -2px 0px #76292390,
+   -2px 2px 0px #76292390,
+   2px 2px 0px #76292390;
+  filter: drop-shadow(6px 6px 1px#4c211b99);
+  width: 360px;
 }
+
+figcaption.MesaVText {
+  margin: 0;
+  padding: 0;
+  font-size: 120%;
+  font-weight: bold;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  color: #4c211b;
+  text-shadow:
+  -1px 1px 2px #4c211b90;  
+}
+
 
 /* End of Images style*/
 
@@ -434,24 +417,6 @@ blockquote {
   
 }
 
-
-h2 {
-  text-align: center;
-  font-size: 12pt;
-  font-weight: bolder;
-  padding-top: 20px;
-  color: #3b0273;
-  text-shadow:
-   -1px -1px 2px #f5e7dc70,  
-    1px -1px 2px #f5e7dc70,
-    -1px 1px 2px #f5e7dc70,
-     1px 1px 2px #f5e7dc70;
-}
-
-p {
-  margin: 2rem;
-  font-family: "Verdana";
-}
 /* Footer Styling */
 
 #bedPic {
@@ -479,15 +444,3 @@ footer {
   2px 2px 3px #3b0273 inset;
 }
 
-h3 {
-  display: flex;
-  justify-content: center;
-  font-size: 10pt;
-  font-weight: 100;
-  background-color: #64428c;
-  color: #f5e7dc;
-  border-top: solid 3px #aa8abd;
-  border-bottom: solid 3px #aa8abd;
-  box-shadow: 2px 2px 3px #3b027390 inset;
-  
-}
