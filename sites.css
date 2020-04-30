@@ -9,6 +9,7 @@ h4,
 h5,
 h6,
 dl {
+  text-decoration: none;
   max-width: 100%;
   padding: 0;
   margin: 0 2rem 0 2rem;
@@ -18,11 +19,10 @@ dl {
 }
 
 h1 {
-  padding: 20px 0 30px 0;
-  margin: 0;
+
+  margin: 2rem;
   color: #f3cb4f;
   text-align: center;
-  margin: 2rem;
   font-size: 3rem;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
@@ -32,11 +32,10 @@ h1 {
 }
 
 h2 {
-  padding: 20px 0 30px 0;
+ 
   margin: 0;
   color: #64a4c0;
   text-align: center;
-  margin: 2rem;
   font-size: 2.0rem;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
@@ -150,47 +149,11 @@ p {
   }
 }
 
-/*Clouds*/
-.panoClouds {
-  position: absolute;
-  width: 900px;
-  height: 150px;
-  margin: 0px auto;
-  overflow: hidden;
-  z-index: 2;
-}
 
-.panoCard {
-  position: relative;
-  width: 1800px;
-  height: 100%;
-  /* background-image: url(images/ghost2.png); */
-  background-repeat: repeat-x;
-  -webkit-animation: header_Roll linear 120s infinite;
-}
-
-.pano-one {
-  position: absolute;
-  width: 1800px;
-  height: 151px;
-  backface-visibility: visible;
-  background-image: url(images/clouds.png);
-  background-repeat: repeat-x;
-}
-
-/*Translate*/
-@-webkit-keyframes header_Roll {
-  from {
-    right: 0px;
-  }
-  to {
-    right: 900px;
-  }
-}
 /*VFX*/
 
 body {
-  background-image: linear-gradient(0deg, #fef8be 60%, #64a4c0 85%);
+  background-image: linear-gradient(0deg, #fef8be 65%, #64a4c0 80%);
 }
 
 #wrapper {
@@ -202,9 +165,6 @@ body {
   box-shadow: 4px 4px 3px #4c211b90;
 }
 
-.hLink {
-  color: blue;
-}
 /*Header elements*/
 
 header {
@@ -292,7 +252,7 @@ header {
 /* Desktop Nav rules */
 @media screen and (min-width: 601px) {
   .headCase {
-    background-color: #aa8abd;
+   
   }
 
   #navbar {
@@ -355,22 +315,115 @@ main {
 }
 
 .cells {
-  
-}
-.headSpace {
-  height: 220px;
+ background-color: unset;
+ 
 }
 
+.portal {
+  color: #4c211b;
+  height: 20rem;
+  border: 0;
+  padding: 0 2rem 4rem 2rem;
+  font-family: "Verdana";
+  font-weight: bold;
+  border-style: none;
+  
+}
+
+.chart {
+  color: #4c211b;
+  height: 15rem;
+  border: 0;
+
+  padding: 0 2rem 0 2rem;
+  font-family: "Verdana";
+  font-weight: bold;
+}
+
+.webIframe {
+  width: 70%;
+  height: 100%;
+  margin-left: 15%;
+}
+
+/*Gallary*/
 #siteList {
-    max-width: 900px;
-    height: 900px;
+    margin: 0 1rem;
 }
 
 #sites {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+/* Gallary - sight buttons*/
+.site {
+  color: #4c211b;
+  text-shadow: 
+  1px 1px 0px #fef8be;
+  padding-left:5px;
+  background-image: linear-gradient(60deg,
+  #f3cb4f 75%, 
+  #c33521 76%, 
+  #c33521 82%, 
+  #fef8be 83%, 
+  #fef8be 89%, 
+  #64a4c0 90%);
+  filter: drop-shadow(6px 6px 1px #4c211b90);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+ color: #4c211b
+}
+
+a:hover {
+  color: #4c211b
+}
+
+.site-tile {
+margin: 30px 6px 0 6px;
+}
+
+.site-tile:hover {
+  margin: 30px 6px 0 6px;
+  transform: scale(1.05);
+  }
+
+  .site-tile:active {
+    margin: 30px 6px 0 6px;
+    transform: scale(.9);
+    }
+
+.site-image {
+  filter: drop-shadow(6px 6px 1px #4c211b90);
+}
+.site-image:hover {
+  filter: drop-shadow(7px 7px 2px #4c211b80);
+  transition-delay: 2s;
+  transition: ease-in-out;
+  box-shadow: 
+  -1px -1px 1px #fef8be , 
+  1px -1px 1px #fef8be ,
+  -1px 1px 1px #fef8be , 
+  1px 1px 1px #fef8be ;
+}
+
+legend {
+  visibility: hidden
+}
+
+.map {
+  width: 70%;
+  height: 100%;
+  margin-left: 15%;
+  margin-top: 1rem;
+  border: solid 5px #64a4c0;
+}
+
 
 /* Footer Styling */
 
@@ -382,6 +435,7 @@ main {
   .bedfade {
     background-color: #cbbe8a90;
     border-radius: 10px 10px 2.1rem 2.1rem;
+    margin-top: .8rem;
     /* box-shadow: 
     -30px -30px 30px #fef8be inset, 
     30px -30px 30px #fef8be inset,
@@ -391,16 +445,37 @@ main {
   footer {
     border: 3px solid #64a4c0;
     padding-bottom: 20px;
-    border-radius: 10px 10px 2.1rem 2.1rem;
+    border-radius: 10px 10px 1.9rem 1.9rem;
     box-shadow: 
     -3px -3px 0px #4c211b inset, 
     3px -3px 0px #4c211b inset,
     -2px 2px 0px #4c211b inset, 
     3px 2px 0px #4c211b inset;
   }
+  img.footLogoStyle {
+    position: relative;
+   top: .6rem;
+      width: 100%;
+      filter: drop-shadow(0.5mm 1mm 0.6mm #4c211b);
+  }
+
+  figcaption.tagLine {
+   font-size: 20pt;
+   font-weight: bold;
+   text-align: center;
+   position: relative;
+   color: #c33521;
+   text-shadow:
+   -2px -2px 3px #fef8be, 
+   2px -2px 3px #fef8be, 
+    -2px 2px 3px #fef8be, 
+    2px 2px 3px #fef8be;
+    top:.6rem;
+  }
   
   h3 {
     margin: 0;
+
     width: auto;
     display: flex;
     justify-content: center;
@@ -421,7 +496,11 @@ main {
     padding-top: 20px;
     color: #4c211b;
     text-shadow: 
-    -1px -1px 2px #fef8be, 
-    
+    -1px -1px 2px #fef8be; 
+  }
+
+  h6 {
+    text-align: center;
+    margin: 5;
   }
   
