@@ -99,16 +99,22 @@ body {
 #wrapper {
   max-width: 900px;
   margin: 0 auto;
+  border-top: solid 1px #c33521;;
   background-repeat: repeat;
   border-radius: 0rem 0rem 2rem 2rem;
-  border: solid 3px #762923;
+  border-right: solid 3px #762923;
+  border-left: solid 3px #762923;
+  border-bottom: solid 3px #762923;
   box-shadow: 4px 4px 3px #4c211b90;
+  
 }
 
 main {
   margin: 0;
   background-image: url(images/Pano2.jpg);
   background-repeat: no-repeat;
+  position: sticky;
+  margin-top: 300px;
 }
 
 /*Header elements*/
@@ -192,8 +198,6 @@ header {
     transition: 0.2s;
     font-weight: bold;
     text-shadow: 2px 1px 3px #a63316;
-  
-
     border-radius: 5px;
   }
 }
@@ -202,7 +206,11 @@ header {
 /* Desktop Nav rules */
 @media screen and (min-width: 601px) {
   .headCase {
-   
+    margin: 0;
+    padding: 0;
+    width: 900px;
+    position: fixed;
+    z-index: 10;
   }
 
   #navbar {
