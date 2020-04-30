@@ -357,6 +357,7 @@ header {
     border: solid 2px #4c211b;
     box-shadow: 2px 3px 3px #1c374a inset;
     text-shadow: 2px 1px 3px #4c211b;
+    border-radius: 5px;
   }
 
   #navbar a:hover {
@@ -365,7 +366,7 @@ header {
     transition: 0.2s;
     font-weight: bold;
     border: solid 1px #4c211b;
-    text-shadow: 2px 1px 3px #4c211b;
+    text-shadow: 2px 1px 3px #a63316;
     box-shadow: 
     -2px -3px 6px #f5e7dc95 inset, 
     -2px 3px 6px #f5e7dc95 inset,
