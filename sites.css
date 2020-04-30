@@ -326,22 +326,23 @@ main {
   padding: 0 2rem 4rem 2rem;
   font-family: "Verdana";
   font-weight: bold;
-  border-style: none;
-  
+  border-style: none; 
 }
 
+.Ilink {
+  color: blue;
+}
 .chart {
   color: #4c211b;
   height: 15rem;
   border: 0;
-
   padding: 0 2rem 0 2rem;
   font-family: "Verdana";
   font-weight: bold;
 }
 
 .webIframe {
-  width: 70%;
+  width: 68%;
   height: 100%;
   margin-left: 15%;
 }
