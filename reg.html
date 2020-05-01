@@ -13,7 +13,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--<meta http-equiv="X-UA-Comatible" content="ie=edge" />-->
-    <title>(Store)Levant&reg; sleep system</title>
+    <title>Members (American Zephyr)</title>
 </head>
 <body>
   <div id="wrapper">
@@ -38,18 +38,12 @@
     <nav id="navbar">
       <ul class="mynav">
         <ul class="mynav">
-          <li class="active">
+          <li>
             <a href="index.html">Home</a>
           </li> 
-          <li>
-            <a href="sites.html">Locations</a>
-          </li>
-          <li>
+          <li class="active">
             <a href="reg.html">Membership</a>
           </li>   
-            <li>
-              <a href="package.html">Plan Trip</a>
-            </li>  
         </ul>
       <div class="keepOpen"></div>
       </nav>
@@ -88,6 +82,13 @@
         placeholder="Smith"
         required
     /></label>
+
+    <label>
+      <span class="matAge">Age</span>
+      <input class="feildCount" type="number" name="age" value=""
+    /> </label>
+    </label>
+    
   </fieldset>
   <!--Feild set1 user contact info-->
   <fieldset>
@@ -235,57 +236,81 @@
 </fieldset>
 
   <fieldset>
-    <legend>Tell us about your mattress.</legend>
+    <legend>Tell us about your Intrests.</legend>
+    
+    <label
+      ><input type="checkbox" name="intrest" value="touring" />Touring</label
+    >
+    <label
+      ><input type="checkbox" name="intrest" value="tempur" />Camping</label
+    >
+    <label
+      ><input type="checkbox" name="intrest" value="photography" />Photography</label
+    >
+    <label
+      ><input type="checkbox" name="intrest" value="hiking" />Hiking</label
+    >
+    <label
+    ><input type="checkbox" name="intrest" value="fests" />Festivals</label
+  >
+  <label
+  ><input type="checkbox" name="intrest" value="dining" />Fine Dining</label
+>
+<label
+><input type="checkbox" name="intrest" value="wine" />Wine Tasting</label
+>
+    <label
+      ><input type="checkbox" name="intrest" value="horseback" />Horseback Riding</label
+    >
+    <label
+      ><input type="checkbox" name="intrest" value="extreme" />Extreme Sports</label
+    >
+    <label
+      ><input type="checkbox" name="intrest" value="4x4" />Off-roading</label
+    >
+    <label
+      ><input type="checkbox" name="intrest" value="music" />Live Music </label
+    >
+    <label
+      ><input type="checkbox" name="intrest" value="nocturnal" />Night Life</label
+    >
     <label>
-      <span class="matAge">How old is your mattress?</span>
-      <input class="feildCount" type="number" name="age" value=""
-    /> years old</label>
-    <span>What brand is it:</span>
-    <label
-      ><input type="checkbox" name="mattress" value="serta" />Serta</label
-    >
-    <label
-      ><input type="checkbox" name="mattress" value="tempur" />Tempur-Pedic</label
-    >
-    <label
-      ><input type="checkbox" name="mattress" value="sealy" />Sealy</label
-    >
-    <label
-      ><input type="checkbox" name="mattress" value="beauty" />Beautyrest</label
-    >
-    <label
-      ><input type="checkbox" name="mattress" value="other" />Other</label
-    >
-    <textarea class="verbose1" name="comments" maxLength="50" placeholder="comment here"></textarea>
+      <input
+        class="feild"
+        name="first"
+        value=""
+        type="text"
+        placeholder="Other"
+    /></label>
   </fieldset>
 
   <!--Radio buttons-->
 
   <fieldset>
-    <legend>How did you learn about Levant?</legend>
+    <legend>Rregarding Exclusicve Offers <br>
+      How often would you like hear from us.</legend>
     <label
-      ><input type="radio" name="source" value="TV" />TV comercial
+      ><input type="radio" name="interact" value="weekly" />Weekly
     </label>
     <label
-      ><input type="radio" name="source" value="Radio" />Radio
+      ><input type="radio" name="interact" value="biMon" />Bi-Monthly
     </label>
     <label
-      ><input type="radio" name="source" value="Mag" />Magazine
+      ><input type="radio" name="interact" value="month" />Monthly
     </label>
     <label
-      ><input type="radio" name="source" value="web" />Online
+      ><input type="radio" name="interact" value="quarter" />Quarterly
     </label>
     <label
-      ><input type="radio" name="source" value="retail" />Retialer
+      ><input type="radio" name="interact" value="biAnn" />Bi-Annual
     </label>
     <label
-      ><input type="radio" name="source" value="WOM" />Word of Mouth
+      ><input type="radio" name="interact" value="annualy" />Annualy
     </label>
     <label
-      ><input  type="radio" name="source" value="oth" />Other
+      ><input type="radio" name="interact" value="selectIntrest" />According to Selected Intrests.
     </label>
-    <textarea class="verbose1" name="comments" maxLength="50" placeholder="comment here">
-    </textarea>
+    
   </fieldset>
 <!--comments/submit-->
   <fieldset>

@@ -238,7 +238,7 @@ header {
     padding: 15px 1.3rem;
     text-decoration: none;
   }
-  .active a {
+  li.active a {
     background-color: #64a4c0;
     color: #f5e7dc;
     font-weight: 600;
