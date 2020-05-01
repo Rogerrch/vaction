@@ -418,11 +418,21 @@ form.userInfo fieldset {
    }
   
   /* Send Button */
+  
+  .sku {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  .submitButton {
+    list-style-type: none;
+  }
+    .sendwrap {
+width: 200px;
+  }
   .sendButton {
-    margin: .8rem 0 .8rem 0;
     background-color: #c33521;
-    width: 20%;
-    height: 30px;
     min-width: 180px;
     color: #f5e7dc;
     border: none;
@@ -431,6 +441,10 @@ form.userInfo fieldset {
     font-family: "Verdana";
     font-weight: bold;
     text-shadow: 2px 1px 3px #4c211b;
+    text-decoration: none;
+    padding: .3rem 3rem;
+    margin-top: 10px;
+   
   }
 
   .sendButton:active {
@@ -438,6 +452,8 @@ form.userInfo fieldset {
     color: whitesmoke;
     font-weight: 600;
     transition: 0.4s;
+    text-decoration: none;
+    
   }
   .sendButton:hover {
     background-color: #f3cb4f;
@@ -453,6 +469,11 @@ form.userInfo fieldset {
     border-radius: 5px;
     text-shadow: 2px 1px 3px #4c211b;
   }
+   .NO {
+     text-align: left;
+     position: relative;
+     right: 2rem;
+   }
 
   /* Footer Styling */
 
