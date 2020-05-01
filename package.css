@@ -266,7 +266,7 @@ header {
     padding: 15px 1.3rem;
     text-decoration: none;
   }
-  .active a {
+  li.active a {
     background-color: #64a4c0;
     color: #f5e7dc;
     font-weight: 600;
@@ -418,30 +418,52 @@ form.userInfo fieldset {
    }
   
   /* Send Button */
+  
+  .submitButton {
+    list-style-type: none;
+  }
+    .sendwrap {
+width: 200px;
+  }
   .sendButton {
-    margin: .8rem 0 .8rem 0;
-    background-color: #3b0273;
-    width: 20%;
-    height: 30px;
+    background-color: #c33521;
     min-width: 180px;
     color: #f5e7dc;
     border: none;
     border-radius: 0.5rem;
-    border: solid 2px #aa8abd;
+    border: solid 2px #4c211b;
     font-family: "Verdana";
     font-weight: bold;
+    text-shadow: 2px 1px 3px #4c211b;
+    text-decoration: none;
+    padding: .3rem 3rem;
+    margin-top: 10px;
+   
   }
+
   .sendButton:active {
     background-color: #faa16f;
-    color: #3b0273;
+    color: whitesmoke;
     font-weight: 600;
     transition: 0.4s;
+    text-decoration: none;
+    
   }
   .sendButton:hover {
-    background-color: #aa8abd;
-    color: #3b0273;
-    border: solid 2px #762923;
+    background-color: #f3cb4f;
+    color: white;
+    transition: 0.2s;
+    font-weight: bold;
+    border: solid 1px #4c211b;
+    box-shadow: 
+    -2px -3px 6px #f5e7dc95 inset, 
+    -2px 3px 6px #f5e7dc95 inset,
+    2px -3px 6px #f5e7dc95 inset, 
+    2px 3px 6px #f5e7dc95 inset;
+    border-radius: 5px;
+    text-shadow: 2px 1px 3px #4c211b;
   }
+
   /* Footer Styling */
 
 #bedPic {
