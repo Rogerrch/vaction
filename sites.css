@@ -386,7 +386,7 @@ margin: 30px 6px 0 6px;
 /* Footer Styling */
 
 #bedPic {
-    background-image: url(images/bottomPano.jpg);
+    background-image: url(http://dmg2120.americanzephyr.net/images/zephyr/bottomPano.jpg);
     border-radius: 10px 10px 2.1rem 2.1rem;
   }
   
@@ -455,7 +455,7 @@ margin: 30px 6px 0 6px;
   width: 1800px;
   height: 151px;
   backface-visibility: visible;
-  background-image: url(images/zephyr.png);
+  background-image: url(http://dmg2120.americanzephyr.net/images/zephyr/zephyr.png);
   background-repeat: repeat-x;
   transform: rotateX(180deg);
 }
@@ -466,7 +466,7 @@ margin: 30px 6px 0 6px;
   height: 151px;
   left: 30px;
   backface-visibility: visible;
-  background-image: url(images/zephyr.png);
+  background-image: url(http://dmg2120.americanzephyr.net/images/zephyr/zephyr.png);
   background-size: 930px 200px;
   background-repeat: repeat-x;
   transition: ease-in-out;
@@ -479,7 +479,7 @@ margin: 30px 6px 0 6px;
   height: 151px;
   left: 60px;
   backface-visibility: visible;
-  background-image: url(images/zephyr.png);
+  background-image: url(http://dmg2120.americanzephyr.net/images/zephyr/zephyr.png);
   background-size: 960px 100px;
   background-repeat: repeat-x;
   transform: rotateX(110deg);
