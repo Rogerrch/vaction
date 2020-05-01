@@ -277,7 +277,7 @@ main {
 }
 
 #panoFade {
-    background-image: url(http://dmg2120.americanzephyr.net/images/zephyr/lg/arches.jpg);
+    background-image: url(http://dmg2120.americanzephyr.net/images/zephyr/lg/Las_vegas.jpg);
     background-repeat: no-repeat;
     background-size: 900px;
     position: sticky;
@@ -301,8 +301,8 @@ main {
     -webkit-text-stroke-color: #4c211b;
       font-size: 1.4rem;
       position: relative;
-      bottom: 9.4rem;
-      left: 8.7rem
+      bottom: 8.2rem;
+      left: 3.8rem
   }
 
 
