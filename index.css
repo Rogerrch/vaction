@@ -270,7 +270,7 @@ header {
 
 main {
   margin: 0;
-  background-image: url(http://dmg2120.americanzephyr.net/images/Pano2.jpg);
+  background-image: url(http://dmg2120.americanzephyr.net/images/zephyr/pano2.jpg);
   background-repeat: no-repeat;
 }
 
@@ -367,7 +367,7 @@ blockquote {
 /* Footer Styling */
 
 #bedPic {
-  background-image: url(http://dmg2120.americanzephyr.net/images/bottomPano.jpg);
+  background-image: url(http://dmg2120.americanzephyr.net/images/zephyr/bottomPano.jpg);
   border-radius: 10px 10px 2.1rem 2.1rem;
 }
 
@@ -415,7 +415,7 @@ footer {
   width: 1800px;
   height: 151px;
   backface-visibility: visible;
-  background-image: url(http://dmg2120.americanzephyr.net/images/zephyr.png);
+  background-image: url(http://dmg2120.americanzephyr.net/images/zephyr/zephyr.png);
   background-repeat: repeat-x;
   transform: rotateX(180deg);
 }
@@ -426,7 +426,7 @@ footer {
   height: 151px;
   left: 30px;
   backface-visibility: visible;
-  background-image: url(http://dmg2120.americanzephyr.net/images/zephyr.png);
+  background-image: url(http://dmg2120.americanzephyr.net/images/zephyr/zephyr.png);
   background-size: 930px 200px;
   background-repeat: repeat-x;
   transition: ease-in-out;
@@ -439,7 +439,7 @@ footer {
   height: 151px;
   left: 60px;
   backface-visibility: visible;
-  background-image: url(http://dmg2120.americanzephyr.net/images/zephyr.png);
+  background-image: url(http://dmg2120.americanzephyr.net/images/zephyr/zephyr.png);
   background-size: 960px 100px;
   background-repeat: repeat-x;
   transform: rotateX(110deg);
@@ -515,7 +515,7 @@ footer {
   width: 1800px;
   height: 151px;
   backface-visibility: visible;
-  background-image: url(http://dmg2120.americanzephyr.net/images/clouds.png);
+  background-image: url(http://dmg2120.americanzephyr.net/images/zephyr/clouds.png);
   background-repeat: repeat-x;
 }
 
