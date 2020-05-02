@@ -282,7 +282,7 @@ main {
 }
 
 #panoFade {
-    background-image: url(http://dmg2120.americanzephyr.net/images/zephyr/lg/bryce_cayon.jpg);
+    background-image: url(http://dmg2120.americanzephyr.net/images/zephyr/lg/BryceCayon.jpg);
     background-repeat: no-repeat;
     background-size: 900px;
     position: sticky;
@@ -293,8 +293,8 @@ main {
     height: 500px;
     background-image: linear-gradient(0deg, 
     #fef8be 05%, 
-    #fef8be01 50%, 
-    #64a4c001 51%, 
+    #fef8be01 30%, 
+    #64a4c001 71%, 
     #64a4c0 99%);
     overflow: hidden;
   }
